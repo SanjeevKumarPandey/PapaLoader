@@ -1,0 +1,77 @@
+body {
+    background-color: transparent;
+    width: 20%
+    height: auto;
+}
+
+body {
+		font: 1.2em/1.0em Arial, Helvetica, sans-serif; margin: 5px auto;	color: #999;
+	}
+	
+button, form {
+    text-transform: uppercase; display: block; margin: 5px auto 0 auto; border: none; font-size: .7em; padding: 5px; border-radius: 2px; width: 80%;
+    color: #111;
+	}
+
+	button:focus, input:focus { 
+	background-color: lightpink; outline: none;
+	}
+	
+	button:hover{
+	background-color: lightgreen;
+	}
+	
+	button:active { 
+	background-color: #FFF006; color: #fff; 
+	}    
+	
+.data-loader {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 15px 25px 0 25px;
+    margin: 150 auto;
+    cursor: default;
+ 
+    background-color: #141517;
+ 
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+ 
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+    box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+}
+
+.tb {
+	position: relative;
+    width: 400px;
+    height: 200px;
+    margin: -160 280;
+}
+
+.info {
+	font: 0.75em/1.0em Arial, Helvetica, sans-serif; margin: 5px auto;	color: #999;
+}
+
+.foot {
+
+	position: relative;
+    width: 200px;
+    height: 100px;
+    padding: 15px 25px 0 25px;
+    margin: 150 auto;
+    cursor: default;
+ 
+    background-color: #141517;
+ 
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+ 
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+    box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+
+}

@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="assets/js/papaparse.min.js"></script>
+	<link href="assets/css/PapaLoader.css" rel="stylesheet">
+	<script src="assets/js/PapaLoader.js"></script>
+</head>
+<body>
+	<div class="data-loader">
+    <form name="foo" method="post" enctype="multipart/form-data">
+        <input id="csvfile" type="file" value="i">
+    </form>
+    <button id="submitbutton" type="button">Upload CSV file!</button>
+    <br>
+    <button id="create" type="button">Download</button>
+    <button type="button" onClick="history.go(0)">&#8634;</button>
+    <textarea cols="50" rows="4" name="comment" class='tb' id='textbox'></textarea>
+</div>
+<div class='foot'>
+<i class='info'>Developed by & &copy; Sanjeev Pandey</i><br />
+<i class='info'>
+<hr>
+<strong>PapaLoader v 1.0</strong>                             <br />
+<span style='font-style: italic;'>An efficient CSV to JSON parser & downloader</span> <br />
+</i>
+</div>
+</body>
+</html>
