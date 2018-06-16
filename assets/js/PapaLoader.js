@@ -6,18 +6,27 @@
                 header: true, 
                 skipEmptyLines: true,
                 complete: function(results) {
-					var _data = JSON.stringify(results.data);
+					var _data = JSON.stringify(results.data); //<-- Result is obtained here
+          //Now, write your own custom code to get the data in desired JSON Format
+          //DEFAULT -
+          //console.log("Dataframe:", JSON.stringify(results.data)); 
+          //console.log("Column names:", results.meta.fields);
+          //console.log("Errors:", results.errors);
+
 					try {
-					var obj = JSON.parse(_data); // parsing string into JSON 
-					var _LDAP, i, j, res, f, email;	
+					//var obj = JSON.parse(_data); // parsing string into JSON 
+
+          //CUSTOMIZED - 
+					/*var _LDAP, i, j, res, f, email;	
 					for(i=0; i<obj.length; i++){
 					 f = JSON.stringify(obj[i]);
 					 j = obj[i].LDAP;
 					 h = JSON.stringify(j);
 					 email = h+':'+f;
 					 document.getElementById('textbox').innerHTML += email+',';
-					}
-
+					}*/
+          move();
+          document.getElementById('textbox').innerHTML += _data;
 					var textFile = null,
   					makeTextFile = function (text) {
     				var data = new Blob([text], {type: 'text/plain'});
@@ -65,7 +74,7 @@
 
     function move() {
         var elem = document.getElementById("myBar");   
-        var width = 10;
+        var width = 0;
         var id = setInterval(frame, 10);
         function frame() {
           if (width >= 100) {

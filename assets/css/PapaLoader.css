@@ -1,8 +1,6 @@
 body {
     background-color: transparent;
-    width: 100%
-    height: auto;
-	font: 1.2em/1.0em Arial, Helvetica, sans-serif; margin: 5px auto;	color: #999;
+	  font: 1.0em/1.0em Arial, Helvetica, sans-serif; margin: 5px auto;	color: #999;
 	}
 	
 button, form {
@@ -28,6 +26,7 @@ button, form {
     height: 200px;
     padding: 15px 25px 0 25px;
     /*margin: 150 auto;*/
+    margin: auto;
     cursor: default;
  
     background-color: #141517;
@@ -43,22 +42,35 @@ button, form {
 
 .tb {
 	position: relative;
-    width: 400px;
+    width: 500px;
     height: 200px;
     /*margin: -160 280;*/
+    border-color: black;
+    font-family: monospace;
+    font-size: 11;
+    line-height: inherit;
 }
 
 .info {
 	font: 0.75em/1.0em Arial, Helvetica, sans-serif; margin: 5px auto;	color: #999;
 }
 
+#csvfile {
+  color: red;
+}
+
+
+/*-----------------
+Footer
+------------------*/
+
 .foot {
 
 	position: relative;
     width: 200px;
-    height: 150px;
+    height: 100px;
     padding: 15px 25px 0 25px;
-    margin: 20 auto;
+    margin: 60 auto;
     cursor: default;
  
     background-color: #141517;
@@ -116,12 +128,12 @@ Social Icons
 }
 
 .facebook {
-  background: #3B5998;
+  background: #F1C40F;
   color: white;
 }
 
 .twitter {
-  background: #55ACEE;
+  background: black;
   color: white;
 }
 
@@ -131,12 +143,12 @@ Social Icons
 }
 
 .linkedin {
-  background: #007bb5;
+  background: #F1C40F;
   color: white;
 }
 
 .youtube {
-  background: #bb0000;
+  background: #E74C3C;
   color: white;
 }
 
@@ -150,11 +162,14 @@ Progress Bar
 
 #myBar {
   width: 10%;
-  height: 30px;
-  background-color: #4CAF50;
+  height: 20px;
+  background-color: black;
   text-align: center;
-  line-height: 30px;
+  line-height: 20px;
   color: white;
+  font-weight: normal;
+  font-size: 10;
+  border-radius: 5px;
 }
 
 /*-------------------------
