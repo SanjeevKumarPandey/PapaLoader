@@ -1,21 +1,83 @@
 <html>
 <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="author" content="Sanjeev Pandey" />
+    <meta Http-Equiv="Cache-Control" Content="no-cache">
+    <meta Http-Equiv="Pragma" Content="no-cache">
+    <meta Http-Equiv="Expires" Content="0">
+    <title>DX Time Logger</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS & Main stylesheet File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/PapaLoader.css" rel="stylesheet">
+    <script src="lib/jquery/jquery.min.js"></script>
     <script src="assets/js/papaparse.min.js"></script>
-	<link href="assets/css/PapaLoader.css" rel="stylesheet">
-	<script src="assets/js/PapaLoader.js"></script>
+    <script src="assets/js/PapaLoader.js"></script>
 </head>
 <body>
-	<div class="data-loader">
-    <form name="foo" method="post" enctype="multipart/form-data">
-        <input id="csvfile" type="file" value="i">
-    </form>
-    <button id="submitbutton" type="button">Upload CSV file!</button>
-    <br>
-    <button id="create" type="button">Download</button>
-    <button type="button" onClick="history.go(0)">&#8634;</button>
-    <textarea cols="50" rows="4" name="comment" class='tb' id='textbox'></textarea>
+<div id="loader" class="paddsection" style="background-color: #F0F3F4;">
+    <div class="container">
+      <div class="contact-block1">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="contact-contact">
+
+              <h2 class="mb-30" style="color: black;">HOW TO USE</h2>
+
+              <ul class="contact-details">
+                <li><span>Choose a csv file;</span></li>
+                <li><span>click to upload,</span></li>
+                <li><span>wait to finish,</span></li>
+                <li><span>data-is-shown;</span></li>
+                <li><span>download json,</span></li>
+                <li><span>reload.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+              <div class="row">
+
+                <div class="col-lg-6 data-loader">
+                  <form name="foo" method="post" enctype="multipart/form-data">
+                  <input id="csvfile" type="file" value="i">
+                  </form>
+        <button id="submitbutton" type="button">Upload CSV file!</button>
+        <br>
+        <button id="create" type="button">Download</button>
+        <button type="button" onClick="history.go(0)">&#8634;</button>
+                </div>  
+                <div class="col-lg-6">
+                  <textarea cols="50" rows="4" name="comment" class='tb' id='textbox'></textarea>
+                </div>
+              </div>
+          </div>
+          <div id='plug' class="col-lg-12">
+            <div id="myProgress">
+            <div id="myBar">10%</div>
+            </div>
+            <br>
+            <button onclick="move();">Click Me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Load font awesome icons -->
+
+
+<!-- The social media icon bar -->
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
 </div>
+
+
 <div class='foot'>
 <i class='info'>Developed by & &copy; Sanjeev Pandey</i><br />
 <i class='info'>

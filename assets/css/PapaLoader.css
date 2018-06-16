@@ -27,7 +27,7 @@ button, form {
     width: 200px;
     height: 200px;
     padding: 15px 25px 0 25px;
-    margin: 150 auto;
+    /*margin: 150 auto;*/
     cursor: default;
  
     background-color: #141517;
@@ -45,7 +45,7 @@ button, form {
 	position: relative;
     width: 400px;
     height: 200px;
-    margin: -160 280;
+    /*margin: -160 280;*/
 }
 
 .info {
@@ -56,9 +56,9 @@ button, form {
 
 	position: relative;
     width: 200px;
-    height: 100px;
+    height: 150px;
     padding: 15px 25px 0 25px;
-    margin: 150 auto;
+    margin: 20 auto;
     cursor: default;
  
     background-color: #141517;
@@ -71,4 +71,120 @@ button, form {
     -moz-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
     box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
 
+}
+
+
+.foot hr {
+      display: block;
+    unicode-bidi: isolate;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 0.5px;
+  color: #999;
+}
+
+/*------------------------
+Social Icons
+--------------------------*/
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/*-----------------------------------
+Progress Bar
+-------------------------------------*/
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+/*-------------------------
+User contact interface
+---------------------------*/
+
+#contact {
+  height: auto;
+  width: 100%;
+}
+
+.contact-details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-details li {
+  padding-bottom: 10px;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+}
+
+#contact #sendmessage.show, #contact #errormessage.show, #contact .show {
+  display: block;
+}
+
+.paddsection {
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
